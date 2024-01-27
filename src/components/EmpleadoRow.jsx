@@ -1,10 +1,17 @@
+import ListGroup from 'react-bootstrap/ListGroup';
+import EmpleadoAvatar from './EmpleadoAvatar';
 
-
-const EmpleadoRow = () => {
+const EmpleadoRow = ({empleados}) => {
     return (
-        <div>
-            
-        </div>
+        <ListGroup>
+                {empleados.map((empleado, posicionEmpleado) => (
+                <EmpleadoAvatar 
+                    key={posicionEmpleado}
+                    empleado={empleado}
+                />
+            ))}
+      
+    </ListGroup>
     );
 };
 
