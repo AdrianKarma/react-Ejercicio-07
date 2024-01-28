@@ -1,7 +1,7 @@
 
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
-import Card from 'react-bootstrap/Card';
+import Badge from 'react-bootstrap/Badge';
 
 const EmpleadoAvatar = ({ empleado }) => {
   const { fullName, title, department, pic } = empleado;
@@ -18,7 +18,9 @@ const EmpleadoAvatar = ({ empleado }) => {
 
             <h2>{fullName}</h2>
             <div className='d-flex '>    <h3 className='mx-2'>{title}</h3>
-            <div className='bg-info text-white p-1'>{department}</div></div>
+            <Badge bg="info" className="ms-5 mb-0 p-2">
+                {department}
+              </Badge></div>
         
             </div>
            
