@@ -18,7 +18,7 @@ const EmpleadoAvatar = ({ empleado }) => {
 
             <h2>{fullName}</h2>
             <div className='d-flex '>    <h3 className='mx-2'>{title}</h3>
-            <Badge bg="info" className="ms-5 mb-0 p-2">
+            <Badge bg="info" className="ms-3 mb-3 p-2">
                 {department}
               </Badge></div>
         
